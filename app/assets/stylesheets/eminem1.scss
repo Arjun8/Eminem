@@ -1,0 +1,23 @@
+// Place all the styles related to the eminem1 controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: 
+$font-stack:    Helvetica, sans-serif;
+$primary-color:#666555;
+p1{
+  font: 100% $font-stack;
+  color: $primary-color;
+  font-size:35px;
+}
+h1
+{
+	font-size:30px;
+}
+#e1
+{
+	text-align:center;
+	
+}
+body
+{
+background-color:#FE9079;
+}

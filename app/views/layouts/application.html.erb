@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HDWallpapers</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header class="navbar-fixed-top navbar-default">
+  	<div class="container">
+  	<%= link_to "home" , "", class:"btn btn-lg btn-success" ,id:"logo" %>
+  	<div class="nav_item">
+  	<%= link_to "Link1" , "", class:"btn btn-default btn-warning" %>
+  	<%= link_to "Link2" , "", class:"btn btn-default btn-warning" %>
+  	<%= link_to "Link3" , "", class:"btn btn-default btn-warning" %>
+  	</div>
+  	</div>
+  </header>
+  <div class="container">
+    <%= yield %>
+    <div class="footer">
+ 	<p>&copy Eminem 2017</p>
+ </div>
+
+    </div>
+ 
+  </body>
+</html>
