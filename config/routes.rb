@@ -1,6 +1,7 @@
 Rails.application.routes.draw do  
 
-root 'eminem1#home'
+root 'pages#home'
+get '/home', to: 'pages#home'
 #get '/home', to: 'eminem1#home'
 #get '/wallpapers' ,to:'wallapers#index'
 #get '/wallapers/new',to:'wallapers#new', as: 'new_wallpaper'

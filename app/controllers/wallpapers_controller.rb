@@ -1,4 +1,6 @@
  class WallpapersController<ApplicationController
+def home
+end
  	def index
       @wallpapers=Wallpaper.all
  	end
