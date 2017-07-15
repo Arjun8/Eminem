@@ -1,0 +1,23 @@
+<p>
+<h1>
+<%=@wallpaper.name%>	
+</h1>
+</p>
+<div class="row">
+<div class="col-md-4 pull-right center">
+<%= gravatar_for @wallpaper.user ,size:200%>
+<p>
+	<h5>Brought to you by: <%= @wallpaper.user.name%></h5>
+</p>
+	</div>
+	<div class="col-md-8">
+		<h3><%=@wallpaper.summary%></h3>
+		<div class="well">
+			<p>
+				<strong>Steps:</strong>
+			</p>
+			<%=@wallpaper.description%>
+		</div>
+	</div>
+</div>
+<h5><%=link_to 'Return to wallpaper',wallpapers_path,class:"btn btn-warning btn-small"%></h5>

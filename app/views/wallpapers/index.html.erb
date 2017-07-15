@@ -1,0 +1,22 @@
+<h1>All Wallpapers</h1>
+<hr/>
+
+<% @wallpapers.each do |wallpaper| %>
+<div class="row">
+<div class="col-md-2">
+<section clas="user_info_centre">
+	<%=gravatar_for wallpaper.user , size: 100 %>
+	<h5>User name:<%=wallpaper.user.name%></h5>
+</section>
+	
+</div>
+<div class="col-lg-8 well">
+<h4><%= link_to wallpaper.name,wallpaper_path(wallpaper)%></h4>
+<p><%= wallpaper.summary %></p>
+<p>
+	<span class="quiet"><small><%=time_ago_in_words(wallpaper.created_at)%> ago</small></span>
+</p>
+</div>
+</div>
+<hr/>
+<%  end %>
