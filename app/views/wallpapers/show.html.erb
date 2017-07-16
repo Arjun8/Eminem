@@ -1,8 +1,5 @@
-<p>
-<h1>
-<%=@wallpaper.name%>	
-</h1>
-</p>
+<%= render 'shared/page_title' ,title:@wallpaper.name%>
+
 <div class="row">
 <div class="col-md-4 pull-right center">
 <%= gravatar_for @wallpaper.user ,size:200%>
@@ -11,12 +8,13 @@
 </p>
 	</div>
 	<div class="col-md-8">
+	<%=link_to "Edit the wallpaper",edit_wallpaper_path(@wallpaper),class:"btn btn-success pull-right" %>
 		<h3><%=@wallpaper.summary%></h3>
 		<div class="well">
 			<p>
 				<strong>Steps:</strong>
 			</p>
-			<%=@wallpaper.description%>
+			<%=simple_format(@wallpaper.description)%>
 		</div>
 	</div>
 </div>

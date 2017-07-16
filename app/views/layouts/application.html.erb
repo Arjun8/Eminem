@@ -15,11 +15,12 @@
   	<div class="nav_item">
   	<%= link_to "Link1" , "", class:"btn btn-default btn-warning" %>
   	<%= link_to "Link2" , "", class:"btn btn-default btn-warning" %>
-  	<%= link_to "Link3" , "", class:"btn btn-default btn-warning" %>
+  	<%= link_to "Add a wallpaper" , new_wallpaper_path, class:"btn btn-default btn-warning" %>
   	</div>
   	</div>
   </header>
   <div class="container">
+  <%= render 'layouts/messages' %>
     <%= yield %>
     <div class="footer">
  	<p>&copy Eminem 2017</p>

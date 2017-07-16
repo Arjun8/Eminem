@@ -1,0 +1,7 @@
+Create an account
+•	Upload and download photos to the site and make them accessible to others
+•	Provide descriptions of trips and photos that others can read
+•	Organize photos by location and trip, 
+•	Find photos based on location
+•	Find photos based on text searches of descriptions 
+•	Locate the place where the photo was taken on a map
