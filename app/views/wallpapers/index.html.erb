@@ -9,12 +9,15 @@
 </section>
 	
 </div>
-<div class="col-lg-8 well">
+<div class="col-lg-6 well">
 <h4><%= link_to wallpaper.name,wallpaper_path(wallpaper)%></h4>
 <p><%= wallpaper.summary %></p>
 <p>
 	<span class="quiet"><small><%=time_ago_in_words(wallpaper.created_at)%> ago</small></span>
 </p>
+</div>
+<div class="col-md-4">
+	<%=image_tag(wallpaper.picture.url,size:"250x150",class:"gravatar") if wallpaper.picture? %>
 </div>
 </div>
 <hr/>

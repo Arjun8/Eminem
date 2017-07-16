@@ -46,6 +46,10 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     builder (3.2.3)
+    carrierwave (1.1.0)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
     coderay (1.1.1)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
@@ -76,13 +80,14 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
+    mini_magick (4.8.0)
     mini_portile2 (2.2.0)
     minitest (5.10.2)
     multi_json (1.12.1)
     nio4r (2.1.0)
     nokogiri (1.8.0-x86-mingw32)
       mini_portile2 (~> 2.2.0)
-    pg (0.19.0-x86-mingw32)
+    pg (0.21.0-x86-mingw32)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -123,11 +128,11 @@ GEM
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    sass (3.5.0)
-      sass-listen (~> 3.0.7)
-    sass-listen (3.0.7)
-      rb-fsevent (>= 0.9.3)
-      rb-inotify (>= 0.9.7)
+    sass (3.5.1)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
@@ -170,9 +175,11 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   byebug
+  carrierwave (= 1.1.0)
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails
+  mini_magick (= 4.8.0)
   pg
   pry
   puma (~> 3.0)
@@ -189,4 +196,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.13.7
+   1.15.1

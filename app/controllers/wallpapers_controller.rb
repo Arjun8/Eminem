@@ -34,8 +34,9 @@ def update
 		render :edit
 	end
 end
+
 private 
   def wallpaper_params
-   params.require(:wallpaper).permit(:name,:summary,:description) 
+   params.require(:wallpaper).permit(:name,:summary,:description,:picture) 
   end
 	end
